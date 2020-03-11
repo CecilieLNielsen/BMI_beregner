@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>BMI forside</title>
+    <title>BMI resultat</title>
 </head>
 <body>
 
@@ -20,32 +20,23 @@
 
     <img src="images/bmi.png" class="img-fluid"/>
 
-    <h1 class="mt-4 text-center">BMI beregner</h1>
+    <h1 class="mt-4 text-center">BMI beregner: resultat</h1>
 
 
+    <div class="row mt-4">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <table class="table">
+                <tr><td>Din højde:</td><td>180 cm </td></tr>
+                <tr><td>Din vægt</td><td>70 kg </td></tr>
+                <tr><td>BMI</td><td>22,64</td></tr>
+                <tr><td>BMI kategori</td><td>Du er normalvægtig</td></tr>
 
+            </table>
 
-
-    <form action="FrontController" method="post">
-
-        <input type="hidden" name="taget" value="resultat"/>
-
-        <div class="form-group">
-            <label for="height">Indtast højde i cm:</label>
-            <input id="height" name="height" type="text" class="form-control" aria-describedby="heightHelp">
-            <small id="heightHelp" class="form-text text-muted">Du skal ikke være flov over din vægt makker</small>
         </div>
-        <div class="form-group">
-            <label for="weight">Indtast vægt i kg:</label>
-            <input id="weight" name="weight" type="text" class="form-control">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Beregn BMI</button>
-
-
-    </form>
-
-
+        <div class="col-lg-4"></div>
+    </div>
 
 
 </div>
